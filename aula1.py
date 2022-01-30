@@ -10,12 +10,16 @@ nome_do_curso = 'Lógica de Progração'
 # Problema 1 - valor por hora 
 # Escreve um programa que retorna o valor de um funcionario com base no seu salário mensal e horas trabalhadas por mês.
 '''
-input salario mensal 
-input horas_trabalhadas_por_mes
-valor_hora - salario_mensal / horas_trabalhadas_por_mes
-print valor_hora
+Eu cheguei atrasado na aula,ainda posso entrar?
+Se essa não for sua terceira vez trasado,então pode sim, caso 
+contrário irá tomar um suspenção.
 '''
-salario_mensal  = input('Qual é seu saláriol mensal')
-hora_trabalhaos_por_mes = input('Quantas horas trabalha por mês? ')
-valor_hora = int(salario_mensal) / int ('horas_trabalhadas_por_mes')
-print(valor_hora)
+numero_de_atrasos = 2
+if numero_de_atrasos >= 3:
+      print('Você está supenso')
+elif numero_de_atrasos == 1: 
+        print('Pode entrar,porém caso toma mais  2 falta,irá ser supenso')
+elif numero_de_atrasos == 2:
+          print('Pode entrar,porém caso tome mais 1 falta,irá ser supenso')
+else:
+             print('Pode entrar')
